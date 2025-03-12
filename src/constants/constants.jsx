@@ -1,5 +1,9 @@
 
-
+import { IoHomeOutline } from "react-icons/io5";
+import { IoPersonOutline } from "react-icons/io5";
+import { PiReadCvLogo } from "react-icons/pi";
+import { LuGalleryVerticalEnd } from "react-icons/lu";
+import { IoMdContact } from "react-icons/io";
 
 export const userInfo = {
 
@@ -15,16 +19,35 @@ export const userInfo = {
     freelance: 'Available',
 
 }
+export const userInfo2 = {
 
-export const social_links = {
 
-    linkedin: { link: 'https://www.linkedin.com/in/mstrhammad/' },
-    github: { link: 'https://www.fiverr.com/mstrhammad339/buying?source=avatar_menu_profile' },
-    instagram: { link: 'https://www.instagram.com/mstrhammad_/' },
-    github: { link: 'https://github.com/mstrhammad44' }
+    name: 'Mstr Hammad',
+
+    birthday: '12-12-1992',
+    phone: '+92-3425122560',
+    email: 'mstrhammad0321',
+    age: '29',
+    city: 'Rawalpindi, Pakistan',
+    freelance: 'Available',
+    degree: 'BS Computer Science',
+
 }
 
+export const navbar_items = [
+
+    { id: "intro", label: "Home", icon: <IoHomeOutline /> },
+    { id: "about", label: "About", icon: <IoPersonOutline /> },
+    { id: "resume", label: "Resume", icon: <PiReadCvLogo /> },
+    { id: "portfolio", label: "Portfolio", icon: <LuGalleryVerticalEnd /> },
+    { id: "contact", label: "Contact", icon: <IoMdContact className="size-5" /> }
+
+]
+
+
+
 export const react_images = [
+
 
     { image: '/Projects/React/1.jpg' },
     { image: '/Projects/React/2.jpg' },

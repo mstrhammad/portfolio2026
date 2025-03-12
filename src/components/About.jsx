@@ -1,152 +1,90 @@
 import { FaGreaterThan } from "react-icons/fa";
-import { userInfo } from '../constants/constants'
+import { userInfo2 } from '../constants/constants';
 import Title from "./Title";
-
-
-
 
 const About = () => {
     return (
-        <>
+        <div className="min-h-screen  mt-8 sm:mt-12">
+            <div className="container">
 
-            <div className=" min-h-screen  mx-36 mt-12 ">
 
-                <div className="">
-                    <Title >
-                        About
-                    </Title>
-
-                    <p class="mt-4 text-lg text-gray-700">
+                <diviv>
+                    <Title>About</Title>
+                    <p className="mt-4 text-base sm:text-lg md:text-xl text-gray-700 sm:w-full ">
                         I am a Full-Stack Developer & UX/UI Designer | Creating Seamless Digital Experiences | JavaScript, React, Next.js Expert.
                     </p>
-                </div>
-                <div className="flex mt-12">
+                </diviv>
 
-                    <div>
-                        <img src="/Pics/profileimage.jpeg" className="w-80 mt-2  " alt="" />
+                <div className="mt-8 sm:mt-12 flex flex-col lg:flex-row items-center lg:items-start gap-6 lg:gap-12"
+                    data-aos="fade-up"
+                    data-aos-duration="2000"
+                >
+
+                    <div className="w-64 ">
+                        <img
+                            src="/Pics/profileimage.jpeg"
+                            alt="Profile"
+                            className="w-full h-auto rounded-lg shadow-lg"
+                        />
                     </div>
 
-                    <div className="ml-6 ">
-                        <h1 className="font-bold text-xl">UI/UX Designer & Web Developer.</h1>
-                        <h1 className="mt-6">I am expert in my all services!</h1>
 
-                        <div className="grid grid-flow-col grid-rows-4  gap-x-40 ">
-                            <div className=" mt-6 flex items-center gap-2">
-                                <FaGreaterThan className="text-primary" />
-                                <h1 className="font-bold">Birthday: </h1>
-                                <h1 >{userInfo.birthday}</h1>
-                            </div>
-                            <div className=" mt-6 flex items-center gap-2">
-                                <FaGreaterThan className="text-primary" />
-                                <h1 className="font-bold">Email: </h1>
-                                <h1 >{userInfo.email}</h1>
-                            </div>
-                            <div className=" mt-6 flex items-center gap-2">
-                                <FaGreaterThan className="text-primary" />
-                                <h1 className="font-bold">Phone: </h1>
-                                <h1 >{userInfo.phone}</h1>
-                            </div>
-                            <div className=" mt-6 flex items-center gap-2">
-                                <FaGreaterThan className="text-primary" />
-                                <h1 className="font-bold">City: </h1>
-                                <h1 >{userInfo.city}</h1>
-                            </div>
+                    <div className="flex-1 mr-16">
+                        <h1 className="text-xl sm:text-2xl md:text-3xl font-bold">UI/UX Designer & Web Developer.</h1>
+                        <p className="mt-2 text-gray-600">I am expert in my all services!</p>
 
 
-                            <div className=" mt-6 flex items-center gap-2">
-                                <FaGreaterThan className="text-primary" />
-                                <h1 className="font-bold">Age: </h1>
-                                <h1 >{userInfo.age}</h1>
-                            </div>
-                            <div className=" mt-6 flex items-center gap-2">
-                                <FaGreaterThan className="text-primary" />
-                                <h1 className="font-bold">Degree: </h1>
-                                <h1 >{userInfo.degree}</h1>
-                            </div>
-                            <div className=" mt-6 flex items-center gap-2">
-                                <FaGreaterThan className="text-primary" />
-                                <h1 className="font-bold">Freelance: </h1>
-                                <h1 >{userInfo.freelance}</h1>
-                            </div>
-
+                        <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
+                            {Object.entries(userInfo2).map(([key, value]) => (
+                                <div key={key} className="flex items-center gap-2">
+                                    <FaGreaterThan className="text-primary" />
+                                    <span className="font-bold capitalize">{key}:</span>
+                                    <span>{value}</span>
+                                </div>
+                            ))}
                         </div>
                     </div>
-                </div>
-
-                <div className="bg-[#f4fafd]  -mx-[144px] h-80 mt-8">
-                    <div className="mx-36 pt-2">
-
-                        <Title> Skills</Title>
-                        <div>
-                            <p className="mt-4">His needs result from something, an escape, indeed, with sincerity and in accordance with his nature.</p>
-                        </div>
-
-
-                        <div className="grid grid-flow-col grid-rows-3   ">
-                            <div className="w-96">
-                                <div className="flex justify-between mb-1 mt-6  ">
-                                    <span className="text-sm font-bold text-primary ">HTML</span>
-                                    <span className="text-sm font-medium text-primary ">95%</span>
-                                </div>
-                                <div className=" bg-gray-200 rounded-full h-2.5 dark:bg-gray-500">
-                                    <div className="bg-primary h-2.5 rounded-full" style={{ width: "   95%" }}></div>
-                                </div>
-                            </div>
-                            <div className="w-96">
-                                <div className="flex justify-between mb-1 mt-8  ">
-                                    <span className="text-sm font-bold text-primary ">CSS</span>
-                                    <span className="text-sm font-medium text-primary ">90%</span>
-                                </div>
-                                <div className=" bg-gray-200 rounded-full h-2.5 dark:bg-gray-500">
-                                    <div className="bg-primary h-2.5 rounded-full" style={{ width: "   90%" }}></div>
-                                </div>
-                            </div>
-                            <div className="w-96">
-                                <div className="flex justify-between mb-1 mt-8  ">
-                                    <span className="text-sm font-bold text-primary ">JAVASCRIPT</span>
-                                    <span className="text-sm font-medium text-primary ">75%</span>
-                                </div>
-                                <div className=" bg-gray-200 rounded-full h-2.5 dark:bg-gray-500">
-                                    <div className="bg-primary h-2.5 rounded-full" style={{ width: "   75%" }}></div>
-                                </div>
-                            </div>
-                            <div className="w-96">
-                                <div className="flex justify-between mb-1 mt-8  ">
-                                    <span className="text-sm font-bold text-primary "> REACT</span>
-                                    <span className="text-sm font-medium text-primary ">70%</span>
-                                </div>
-                                <div className=" bg-gray-200 rounded-full h-2.5 dark:bg-gray-500">
-                                    <div className="bg-primary h-2.5 rounded-full" style={{ width: "   70%" }}></div>
-                                </div>
-                            </div>
-                            <div className="w-96">
-                                <div className="flex justify-between mb-1 mt-8  ">
-                                    <span className="text-sm font-bold text-primary ">UI/UX</span>
-                                    <span className="text-sm font-medium text-primary ">85%</span>
-                                </div>
-                                <div className=" bg-gray-200 rounded-full h-2.5 dark:bg-gray-500">
-                                    <div className="bg-primary h-2.5 rounded-full" style={{ width: "   85%" }}></div>
-                                </div>
-                            </div>
-                            <div className="w-96">
-                                <div className="flex justify-between mb-1 mt-8  ">
-                                    <span className="text-sm font-bold text-primary ">FIGMA</span>
-                                    <span className="text-sm font-medium text-primary ">90%</span>
-                                </div>
-                                <div className=" bg-gray-200 rounded-full h-2.5 dark:bg-gray-500">
-                                    <div className="bg-primary h-2.5 rounded-full" style={{ width: "   90%" }}></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
             </div>
 
-        </>
 
+            <div className="mt-12  py-8 sm:py-12 bg-[#f4fafd]"
+                data-aos="fade-up-right"
+                data-aos-duration="2000"
+            >
+                <div className="mx-4 sm:mx-8 md:mx-16 lg:mx-24 xl:mx-36 relative z-20">
+                    <Title>Skills</Title>
+                    <p className="mt-4 text-base sm:text-lg md:text-xl text-gray-700">
+                        His needs result from something, an escape, indeed, with sincerity and in accordance with his nature.
+                    </p>
 
-    )
-}
+                    <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        {[
+                            { skill: "HTML", percentage: "95%" },
+                            { skill: "CSS", percentage: "90%" },
+                            { skill: "JAVASCRIPT", percentage: "75%" },
+                            { skill: "REACT", percentage: "70%" },
+                            { skill: "UI/UX", percentage: "85%" },
+                            { skill: "FIGMA", percentage: "90%" },
+                        ].map((item, index) => (
+                            <div key={index} className="w-full">
+                                <div className="flex justify-between">
+                                    <span className="text-sm sm:text-base font-bold text-primary">{item.skill}</span>
+                                    <span className="text-sm sm:text-base font-medium text-primary">{item.percentage}</span>
+                                </div>
+                                <div className="bg-gray-200 rounded-full h-2.5 mt-2">
+                                    <div
+                                        className="bg-primary h-2.5 rounded-full"
+                                        style={{ width: item.percentage }}
+                                    ></div>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </div>
+        </div>
+    );
+};
 
 export default About;
