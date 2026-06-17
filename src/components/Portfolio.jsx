@@ -121,14 +121,16 @@ const Portfolio = () => {
                 </div>
             </div>
 
+            {/* Experience Section Anchor */}
+            <div id="experience" className="scroll-mt-24"></div>
+
             {/* Experience Section */}
             <div
-                id="experience"
                 className="min-h-screen flex items-center"
                 data-aos="fade-up"
                 data-aos-duration="1000"
             >
-                <div className="bg-[#f4fafd] py-12 flex flex-col items-center w-full">
+                <div className="bg-[#f4fafd] py-16 flex flex-col items-center w-full">
                     <div className="container">
                         <Title>Experience</Title>
 
@@ -187,6 +189,7 @@ const Portfolio = () => {
                                             <h4 className="text-primary font-bold text-sm">
                                                 {card.title}
                                             </h4>
+
                                             <p className="mt-2 text-gray-800 font-semibold text-sm">
                                                 {card.value}
                                             </p>

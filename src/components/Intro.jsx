@@ -39,7 +39,7 @@ const Intro = () => {
                     data-aos="fade-up"
                     data-aos-duration="2000"
                 >
-                    <h1 className="text-3xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-4xl font-sans text-white">
+                    <h1 className="text-3xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-5xl font-sans text-white">
                         Muhammad Hammad
                     </h1>
 
@@ -58,8 +58,8 @@ const Intro = () => {
                     data-aos-duration="2000"
                 >
                     <a
-                        href="/Resume.pdf"
-                        download="Resume.pdf"
+                        href="/Hammad_cv.pdf"
+                        download="Hammad_cv.pdf"
                         className="flex items-center gap-2 bg-primary px-4 sm:px-6 py-2 sm:py-3 rounded-lg sm:rounded-2xl text-sm sm:text-base md:text-lg text-white hover:bg-sky-400 transition-colors duration-300"
                     >
                         <SiReaddotcv className="size-4 sm:size-5" />
