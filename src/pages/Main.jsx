@@ -1,3 +1,5 @@
+"use client";
+
 import Intro from "../components/Intro";
 import About from "../components/About";
 import Resume from "../components/Resume";
