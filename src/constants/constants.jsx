@@ -8,9 +8,9 @@ import { IoMdContact } from "react-icons/io";
 export const userInfo = {
 
 
-    name: 'Mstr Hammad',
+    name: 'Muhammad Hammad',
     picture: '/Pics/profileimage.jpeg',
-    birthday: '12-12-1992',
+    birthday: '06-03-2004',
     email: 'mstrhammad0321@gmail.com',
     phone: '+92-3425122560',
     city: 'Rawalpindi, Pakistan',
@@ -22,11 +22,11 @@ export const userInfo = {
 export const userInfo2 = {
 
 
-    name: 'Mstr Hammad',
+    name: 'Muhammad Hammad',
 
-    birthday: '12-12-1992',
+    birthday: '06-03-2004',
     phone: '+92-3425122560',
-    email: 'mstrhammad0321',
+    email: 'mstrhammad0321@gmail.com',
     age: '29',
     city: 'Rawalpindi, Pakistan',
     freelance: 'Available',
