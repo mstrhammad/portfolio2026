@@ -45,7 +45,7 @@ const Navbar = ({ isOpen, setIsOpen }) => {
                             alt="profile"
                             className="w-28 h-28 lg:w-24 lg:h-24 xl:w-36 xl:h-36 rounded-full mx-auto my-5 border-zinc-800 border-8 lg:border-4 xl:border-8"
                         />
-                        <h1 className="text-2xl lg:text-lg font-bold text-center xl:text-2xl">
+                        <h1 className="text-lg lg:text-sm font-bold text-center xl:text-2xl">
                             {userInfo.name}
                         </h1>
                     </div>

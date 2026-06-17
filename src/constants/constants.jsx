@@ -4,11 +4,12 @@ import { IoPersonOutline } from "react-icons/io5";
 import { PiReadCvLogo } from "react-icons/pi";
 import { LuGalleryVerticalEnd } from "react-icons/lu";
 import { IoMdContact } from "react-icons/io";
+import { ImBriefcase } from "react-icons/im";
 
 export const userInfo = {
 
 
-    name: 'Muhammad Hammad',
+    name: 'M Hammad',
     picture: '/Pics/profileimage.jpeg',
     birthday: '06-03-2004',
     email: 'mstrhammad0321@gmail.com',
@@ -22,7 +23,7 @@ export const userInfo = {
 export const userInfo2 = {
 
 
-    name: 'Muhammad Hammad',
+    name: 'M Hammad',
 
     birthday: '06-03-2004',
     phone: '+92-3425122560',
@@ -40,6 +41,7 @@ export const navbar_items = [
     { id: "about", label: "About", icon: <IoPersonOutline /> },
     { id: "resume", label: "Resume", icon: <PiReadCvLogo /> },
     { id: "portfolio", label: "Portfolio", icon: <LuGalleryVerticalEnd /> },
+    { id: "experience", label: "Experience", icon: <ImBriefcase /> },
     { id: "contact", label: "Contact", icon: <IoMdContact className="size-5" /> }
 
 ]

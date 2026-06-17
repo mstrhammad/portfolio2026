@@ -39,8 +39,8 @@ const Intro = () => {
                     data-aos="fade-up"
                     data-aos-duration="2000"
                 >
-                    <h1 className="text-3xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-5xl font-sans text-white">
-                        Mstr Hammad
+                    <h1 className="text-3xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-4xl font-sans text-white">
+                        Muhammad Hammad
                     </h1>
 
                     <h1 className="text-xl sm:text-xl md:text-2xl lg:text-2xl mt-2 sm:mt-4 text-white flex gap-2 justify-center md:justify-start">
